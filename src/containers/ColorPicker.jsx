@@ -8,9 +8,12 @@ const ColorPicker = () => {
   const [text, setText] = useState('');
 
   const handleChange = ({ target }) => {
-    if(target.name === 'bgColor') setBgColor(target.value);
-    if(target.name === 'fgColor') setFgColor(target.value);
-    if(target.name === 'text') setText(target.value);
+    const factoryMethod = {
+      bgColor: setBgColor,
+      fgColor: setFgColor,
+      text: setText
+    };
+    factoryMethod[target.name](target.value);
   };
 
   return (
