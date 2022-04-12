@@ -33,13 +33,11 @@ exports[`App component renders App 1`] = `
     id="text"
     name="text"
     type="text"
-    value="Hello"
+    value=""
   />
   <div
     data-testid="display"
     style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); width: 500px; height: 500px;"
-  >
-    Hello
-  </div>
+  />
 </DocumentFragment>
 `;
